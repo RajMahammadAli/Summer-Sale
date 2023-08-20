@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer Sale</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-[#F9F6E2] h-auto">
+      <div
+        class="container mx-auto grid grid-cols-1 lg:grid-cols-2 pt-20 lg:pt-0"
+      >
+        <section class="flex justify-center items-center">
+          <div class="text-center">
+            <h2 class="text-3xl text-[#111]">---SALE FEVER---</h2>
+            <h1 class="font-extrabold text-5xl py-5">
+              Purchase TK 200 or <br />
+              above & get 20% off
+            </h1>
+            <div class="flex gap-3 justify-center">
+              <p class="text-2xl">Use Promo Code</p>
+              <button
+                class="bg-[#E527B2] text-white px-4 py-3 rounded-lg font-semibold"
+              >
+                SELL200
+              </button>
+            </div>
+          </div>
+        </section>
+        <section>
+          <img class="w-full lg:w-[600px]" src="./images/Summer 1.png" alt="" />
+        </section>
+      </div>
+    </header>
+    <main>
+      <div class="container mx-auto lg:flex">
+        <section class="w-full lg:w-[80%] h-auto">
+          <div>
+            <h1 class="text-[#111] text-4xl py-6">Kitchenware</h1>
+            <!-- cards -->
+            <div
+              class="grid grid-cols-1 mg:grid-cols-2 lg:grid-cols-3 gap-3 p-2"
+            >
+              <!-- card 01-->
+              <div
+                onclick="getCartInfo(this)"
+                class="card w-auto bg-base-100 shadow-xl"
+              >
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/prod1.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex">
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                  </div>
+                  <h2
+                    id="first-product-id"
+                    class="card-title text-[#111] font-semibold text-xl"
+                  >
+                    K. Accessories
+                  </h2>
+                  <p class="text-gray-400 text-xl"><span>39</span> tk</p>
+                </div>
+              </div>
+              <!-- card 02-->
+              <div
+                onclick="getCartInfo(this)"
+                class="card w-auto bg-base-100 shadow-xl"
+              >
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/prod2.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex">
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                  </div>
+                  <h2 class="card-title text-[#111] font-semibold text-xl">
+                    wooden utencils
+                  </h2>
+                  <p class="text-gray-400 text-xl"><span>25</span> tk</p>
+                </div>
+              </div>
+              <!-- card 03-->
+              <div
+                onclick="getCartInfo(this)"
+                class="card w-auto bg-base-100 shadow-xl"
+              >
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/prod3.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex">
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                  </div>
+                  <h2 class="card-title text-[#111] font-semibold text-xl">
+                    Home Cooker
+                  </h2>
+                  <p class="text-gray-400 text-xl"><span>49</span> tk</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 class="text-[#111] text-4xl py-6">Sportswear</h1>
+            <!-- cards -->
+            <div
+              class="grid grid-cols-1 mg:grid-cols-2 lg:grid-cols-3 gap-3 p-2"
+            >
+              <!-- card 01-->
+              <div
+                onclick="getCartInfo(this)"
+                class="card w-auto bg-base-100 shadow-xl"
+              >
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/prod4.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex">
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                  </div>
+                  <h2 class="card-title text-[#111] font-semibold text-xl">
+                    Sports Back Cap
+                  </h2>
+                  <p class="text-gray-400 text-xl"><span>49</span> tk</p>
+                </div>
+              </div>
+              <!-- card 02-->
+              <div
+                onclick="getCartInfo(this)"
+                class="card w-auto bg-base-100 shadow-xl"
+              >
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/prod5.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex">
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                  </div>
+                  <h2 class="card-title text-[#111] font-semibold text-xl">
+                    Full Jersey Set
+                  </h2>
+                  <p class="text-gray-400 text-xl"><span>69</span> tk</p>
+                </div>
+              </div>
+              <!-- card 03-->
+              <div
+                onclick="getCartInfo(this)"
+                class="card w-auto bg-base-100 shadow-xl"
+              >
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/prod6.png"
+                    alt="Shoes"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex">
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame (1).svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                    <img src="./icons/Frame outline.svg" alt="" srcset="" />
+                  </div>
+                  <h2 class="card-title text-[#111] font-semibold text-xl">
+                    Sports cates
+                  </h2>
+                  <p class="text-gray-400 text-xl"><span>159</span> tk</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full lg:w-[30%] pt-24 p-4">
+          <div>
+            <div>
+              <h2 class="text-[#111] text-2xl font-medium">Have Coupon?</h2>
+              <div>
+                <input
+                  type="text"
+                  name=""
+                  id="keyWordInput"
+                  placeholder="Coupon code"
+                  class="text-gray-400 py-2"
+                />
+                <button
+                  type="button"
+                  id="submitButton"
+                  class="bg-[#E527B2] text-white px-4 py-2 rounded-lg font-semibold"
+                  disabled
+                >
+                  Apply
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="pt-28">
+            <div id="selected-items"></div>
+            <h1>Total price: <span id="total-price">00</span></h1>
+            <h1>Discount: <span id="discountText">00</span></h1>
+            <h1>Total: <span id="grandTotal">00</span></h1>
+          </div>
+          <div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              id="Purchase-button"
+              class="bg-[#E527B2] text-white px-24 py-2 rounded-lg font-semibold"
+              onclick="my_modal_1.showModal()"
+              disabled
+            >
+              Make Purchase
+            </button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box">
+                <div class="w-full flex justify-center">
+                  <img class="w-3/4" src="./images/congo.png" alt="" />
+                </div>
+
+                <h1 class="text-[#111] text-4xl font-bold text-center">
+                  Contratulations
+                </h1>
+                <p class="text-gray-400 text-xl font-normal text-center">
+                  Your Purchase the product
+                </p>
+                <div class="modal-action w-full flex justify-center">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button
+                    id="closeButton"
+                    class="bg-[#E527B2] text-white px-24 py-2 rounded-lg font-semibold"
+                  >
+                    Go Home
+                  </button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./script/cart.js"></script>
+  </body>
+</html>
